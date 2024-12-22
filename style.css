@@ -1,0 +1,127 @@
+body {
+    background-color: #1a1a1a;
+    color: #00ff00;
+    font-family: "Comic Sans MS", cursive;
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://img.freepik.com/free-vector/cannabis-leaves-pattern-with-glitch-effect_225004-658.jpg');
+    background-opacity: 0.1;
+}
+
+header {
+    text-align: center;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border: 5px solid #00ff00;
+    transform: rotate(-1deg);
+}
+
+h1 {
+    font-size: 4em;
+    text-shadow: 3px 3px #ff00ff;
+    animation: bounce 1s infinite;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #333;
+    margin: 20px 0;
+}
+
+nav a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    transform: rotate(2deg);
+}
+
+nav a:hover {
+    background-color: #00ff00;
+    color: #000;
+    transform: scale(1.1) rotate(-2deg);
+}
+
+section {
+    background-color: #2a2a2a;
+    margin: 40px 0;
+    padding: 20px;
+    border: 3px dashed #00ff00;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #ff00ff;
+}
+
+.wobble {
+    animation: wobble 2s infinite;
+}
+
+.spin {
+    animation: spin 10s infinite;
+}
+
+.shake {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes wobble {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.diary-entry {
+    font-family: "Comic Sans MS", cursive;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transform: rotate(-2deg);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a2a2a;
+    margin-top: 40px;
+    font-size: 0.8em;
+    transform: rotate(1deg);
+}
+
+.meth-leaf {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    filter: hue-rotate(90deg); /* Makes it more trippy! */
+}
+
+/* If you want the leaf to bounce while spinning */
+@keyframes spin {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.2); }
+    100% { transform: rotate(360deg) scale(1); }
+}
